@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURUM - Salón de Belleza Unisex Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-brand">AURUM</a>
+
+      <!-- Desktop Nav -->
+      <div class="nav-links-desktop">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#testimonios" class="nav-link">Reseñas</a>
+        <a href="#contacto" class="btn-reserve">Reservar</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="close-menu-btn">
+      <i class="fas fa-xmark"></i>
+    </button>
+    <a href="#inicio" class="mobile-menu-link">Inicio</a>
+    <a href="#servicios" class="mobile-menu-link">Servicios</a>
+    <a href="#galeria" class="mobile-menu-link">Galería</a>
+    <a href="#nosotros" class="mobile-menu-link">Nosotros</a>
+    <a href="#testimonios" class="mobile-menu-link">Reseñas</a>
+    <a href="#contacto" class="mobile-menu-link">Reservar Cita</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero" style="background-image: url('public/images/galeria/HeroPrincipal.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-animate>
+      <p class="hero-label">Est. 2024 · Salón Unisex Premium</p>
+      <h1 class="hero-title">AURUM</h1>
+      <p class="hero-subtitle">Salón de Belleza</p>
+      <p class="hero-text">Donde el arte y el cuidado personal se convierten en una experiencia extraordinaria.</p>
+      <a href="#contacto" class="btn-cta">Reservar Cita</a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-bounce"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="servicios" class="services">
+    <div class="container" data-animate>
+      <p class="section-label">Nuestros Servicios</p>
+      <h2 class="section-title">Arte en cada detalle</h2>
+      <p class="section-subtitle">Servicios premium para hombres y mujeres en un ambiente de lujo excepcional.</p>
+    </div>
+
+    <!-- Service Tabs -->
+    <div class="services-tabs" data-animate>
+      <button class="service-tab active" data-tab="el">Para Él</button>
+      <button class="service-tab" data-tab="ella">Para Ella</button>
+      <button class="service-tab" data-tab="spa">Uñas & Spa</button>
+    </div>
+
+    <!-- Services Lists -->
+    <div class="services-container">
+      <!-- Para Él -->
+      <div class="services-list active" id="services-el" data-animate>
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h3 class="service-name">Corte Caballero</h3>
+          <p class="service-desc">Corte clásico o moderno con acabado de barbería premium con tijeras de precisión suiza.</p>
+          <p class="service-price">$150</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h3 class="service-name">Diseño de Barba</h3>
+          <p class="service-desc">Perfilado, arreglo y cuidado completo de barba con navajas artesanales y bálsamo premium.</p>
+          <p class="service-price">$120</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h3 class="service-name">Corte + Barba</h3>
+          <p class="service-desc">Combo completo para el caballero exigente: corte y diseño de barba con acabado impecable.</p>
+          <p class="service-price">$250</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h3 class="service-name">Tratamiento Capilar</h3>
+          <p class="service-desc">Hidratación profunda, fortalecimiento y nutrición con productos premium de lujo.</p>
+          <p class="service-price">$220</p>
+        </div>
+      </div>
+
+      <!-- Para Ella -->
+      <div class="services-list" id="services-ella" data-animate>
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h3 class="service-name">Corte Dama</h3>
+          <p class="service-desc">Corte personalizado con técnica de precisión para realzar tu belleza natural.</p>
+          <p class="service-price">$200</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h3 class="service-name">Tinte & Color</h3>
+          <p class="service-desc">Coloración profesional con pigmentos de lujo. Desde tonos naturales hasta creativos.</p>
+          <p class="service-price">desde $400</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h3 class="service-name">Peinados</h3>
+          <p class="service-desc">Peinados elegantes para eventos especiales. Técnicas modernas y clásicas.</p>
+          <p class="service-price">desde $250</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h3 class="service-name">Tratamiento Capilar</h3>
+          <p class="service-desc">Hidratación profunda y nutrición con productos de lujo para cabello radiante.</p>
+          <p class="service-price">desde $380</p>
+        </div>
+      </div>
+
+      <!-- Uñas & Spa -->
+      <div class="services-list" id="services-spa" data-animate>
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h3 class="service-name">Manicure Clásico</h3>
+          <p class="service-desc">Cuidado completo de manos con masaje relajante y acabado perfecto.</p>
+          <p class="service-price">$150</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h3 class="service-name">Pedicure Premium</h3>
+          <p class="service-desc">Tratamiento completo de pies con exfoliación, masaje y acabado impecable.</p>
+          <p class="service-price">$220</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h3 class="service-name">Uñas Acrílicas</h3>
+          <p class="service-desc">Aplicación de uñas acrílicas con diseño personalizado y acabado de lujo.</p>
+          <p class="service-price">desde $380</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h3 class="service-name">Uñas en Gel</h3>
+          <p class="service-desc">Manicura en gel de larga duración con colores y diseños a elegir.</p>
+          <p class="service-price">desde $320</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="galeria" class="gallery">
+    <div class="container" data-animate>
+      <p class="section-label">Nuestro Trabajo</p>
+      <h2 class="section-title">Habla por sí solo</h2>
+      <a href="https://instagram.com" target="_blank" class="instagram-link">
+        <i class="fab fa-instagram"></i> Ver más en Instagram
+      </a>
+    </div>
+
+    <div class="gallery-grid" data-animate>
+      <!-- Corte & Estilo -->
+      <div class="gallery-card" style="height: 330px;">
+        <img src="public/images/galeria/CorteCaballero.png" alt="Corte & Estilo" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Caballero</span>
+          <span class="gallery-caption">Corte & Estilo</span>
+        </div>
+      </div>
+
+      <!-- Diseño de Barba -->
+      <div class="gallery-card" style="height: 245px;">
+        <img src="public/images/galeria/DisenoBarba.png" alt="Diseño de Barba" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Para Él</span>
+          <span class="gallery-caption">Diseño de Barba</span>
+        </div>
+      </div>
+
+      <!-- Balayage Natural -->
+      <div class="gallery-card" style="height: 295px;">
+        <img src="public/images/galeria/BalaygeNatural.png" alt="Balayage Natural" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Para Ella</span>
+          <span class="gallery-caption">Balayage Natural</span>
+        </div>
+      </div>
+
+      <!-- Uñas Acrílicas -->
+      <div class="gallery-card" style="height: 265px;">
+        <img src="public/images/galeria/UnasAcrilicas.png" alt="Uñas Acrílicas" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Spa & Uñas</span>
+          <span class="gallery-caption">Uñas Acrílicas</span>
+        </div>
+      </div>
+
+      <!-- Peinado Elegante -->
+      <div class="gallery-card" style="height: 315px;">
+        <img src="public/images/galeria/PeinadoElegante.png" alt="Peinado Elegante" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Para Ella</span>
+          <span class="gallery-caption">Peinado Elegante</span>
+        </div>
+      </div>
+
+      <!-- Nutrición Capilar -->
+      <div class="gallery-card" style="height: 252px;">
+        <img src="public/images/galeria/NutricionCapilar.png" alt="Nutrición Capilar" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-cat">Tratamiento</span>
+          <span class="gallery-caption">Nutrición Capilar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US SECTION -->
+  <section id="nosotros" class="why-us" style="background-image: url('public/images/galeria/PorQueElegirnos.png');">
+    <div class="why-us-overlay"></div>
+    <div class="container why-us-content" data-animate>
+      <p class="section-label">Por Qué Elegirnos</p>
+      <h2 class="section-title">La excelencia como estándar</h2>
+
+      <div class="why-us-grid">
+        <div class="why-us-card">
+          <span class="why-us-num">I</span>
+          <h3>Estilistas Certificados</h3>
+          <p>Profesionales con años de experiencia internacional y certificaciones en técnicas avanzadas.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-num">II</span>
+          <h3>Productos de Lujo</h3>
+          <p>Utilizamos las mejores marcas: Kérastase, Oribe, Moroccanoil y otras exclusivas.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-num">III</span>
+          <h3>Ambiente Exclusivo</h3>
+          <p>Espacios diseñados para confort máximo. Música, aromas y atmósfera de spa premium.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-num">IV</span>
+          <h3>Puntualidad Garantizada</h3>
+          <p>Respetamos tu tiempo. Citas puntuales con profesionales comprometidos con la excelencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonios" class="testimonials" style="background-image: url('public/images/galeria/Testimonios.png');">
+    <div class="testimonials-overlay"></div>
+    <div class="container testimonials-content" data-animate>
+      <p class="section-label">Testimonios</p>
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">Una experiencia genuinamente de lujo. Cada detalle está pensado para tu comodidad y los resultados superan mis expectativas. Vuelvo una y otra vez.</p>
+              <p class="testimonial-author">María González</p>
+              <p class="testimonial-service">Tinte & Balayage</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">Llevo 8 meses siendo cliente fiel. Los profesionales conocen mis preferencias, el servicio es impeccable y el ambiente es de clase mundial.</p>
+              <p class="testimonial-author">Carlos Mendoza</p>
+              <p class="testimonial-service">Corte + Barba</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">Mis uñas nunca habían lucido tan perfectas. La atención es personalizada y los diseños son creativos. Definitivamente mi lugar de confianza.</p>
+              <p class="testimonial-author">Valentina Torres</p>
+              <p class="testimonial-service">Uñas en Gel</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">La mejor inversión para mi imagen personal. Profesionalismo de nivel internacional en un ambiente de lujo incomparable.</p>
+              <p class="testimonial-author">Roberto Díaz</p>
+              <p class="testimonial-service">Corte Caballero</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="testimonials-controls">
+          <button class="testimonial-arrow" id="prev-testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots" id="testimonial-dots"></div>
+          <button class="testimonial-arrow" id="next-testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contacto" class="contact" style="background-image: url('public/images/galeria/Reservaciones.png');">
+    <div class="contact-overlay"></div>
+    <div class="container contact-content" data-animate>
+      <p class="section-label">Reservas & Contacto</p>
+      <h2 class="section-title">Agenda tu cita</h2>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Av. Principal 1234<br>Colonia Centro, Ciudad<br>CP 12345</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horario</h4>
+              <p>Lun–Vie: 9:00 – 20:00<br>Sábado: 9:00 – 18:00<br>Domingo: Cerrado</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Teléfono</h4>
+              <p><a href="tel:+1234567890">+1 (234) 567-8901</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Container -->
+        <div class="form-container">
+          <!-- Form -->
+          <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <select required>
+              <option value="">Selecciona un servicio</option>
+              <option value="Corte Caballero">Corte Caballero</option>
+              <option value="Diseño de Barba">Diseño de Barba</option>
+              <option value="Corte + Barba">Corte + Barba</option>
+              <option value="Tratamiento Capilar">Tratamiento Capilar</option>
+              <option value="Corte Dama">Corte Dama</option>
+              <option value="Tinte & Color">Tinte & Color</option>
+              <option value="Peinado">Peinado</option>
+              <option value="Manicure Clásico">Manicure Clásico</option>
+              <option value="Pedicure Premium">Pedicure Premium</option>
+              <option value="Uñas Acrílicas">Uñas Acrílicas</option>
+              <option value="Uñas en Gel">Uñas en Gel</option>
+            </select>
+            <div class="form-datetime">
+              <input type="date" required>
+              <input type="time" required>
+            </div>
+            <input type="tel" placeholder="Teléfono / WhatsApp" required>
+            <textarea placeholder="Notas adicionales (opcional)" rows="3"></textarea>
+            <button type="submit" class="btn-submit">Solicitar Cita</button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="form-success" class="form-success" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+            <h3>¡Solicitud Enviada!</h3>
+            <p>Nos pondremos en contacto contigo pronto para confirmar tu cita. Gracias por tu confianza.</p>
+            <button type="button" id="reset-form" class="btn-reset">Solicitar Otra Cita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>AURUM</h3>
+        <p>Salón de Belleza Unisex</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-copyright">© 2024 Aurum Salón de Belleza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

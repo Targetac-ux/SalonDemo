@@ -1,0 +1,29 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node (si se usa)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Vercel
+.vercel/
+.vercelignore
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+.Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

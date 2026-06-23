@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Static site - no build required'",
+  "outputDirectory": ".",
+  "public": false,
+  "env": {},
+  "regions": ["iad1"],
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}

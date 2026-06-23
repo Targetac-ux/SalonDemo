@@ -1,0 +1,19 @@
+{
+  "name": "aurum-salon-landing",
+  "version": "1.0.0",
+  "description": "Landing page para AURUM - Salón de Belleza Unisex Premium",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": [
+    "salon",
+    "belleza",
+    "landing-page",
+    "responsive"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "private": true
+}
